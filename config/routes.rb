@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   require "api_constraints"
-  devise_for(:users, :controllers => { :sessions => "sessions" })
+  devise_for :users
   resources :books
   resources :users
   root "books#index"
